@@ -1,0 +1,81 @@
+body {
+  font-family: Brush Script MT, serif;
+  background-color: #ffefd5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 5px solid #ffa07a;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fade-in 2s ease-in-out;
+}
+
+h1 {
+  color: #ff6347;
+  font-size: 3rem;
+  animation: bounce 2s infinite;
+}
+
+.birthday-message {
+  font-size: 1.5rem;
+  color: #ff4500;
+  margin-bottom: 20px;
+}
+
+.flower-img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  animation: rotate-scale 3s infinite;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate-scale {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(15deg) scale(1.1);
+  }
+}
