@@ -1,6 +1,6 @@
 body {
-  font-family: Brush Script MT, serif;
-  background-color: #ffefd5;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #00b4d8, #48cae4, #90e0ef, #00c897);
   display: flex;
   justify-content: center;
   align-items: center;
